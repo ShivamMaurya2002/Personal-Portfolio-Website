@@ -1,0 +1,1138 @@
+/* General Styles with Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+        Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    background-color: #0a192f;
+    overflow-x: hidden;
+}
+
+/* -------------------------------------------------------- Navigation Bar ------------------------------------------- */
+
+/* Navigation Bar */
+.navbar {
+    background-color: rgba(10, 25, 47, 0.95);
+    padding: 12px 0;
+    border-bottom: 2px solid rgba(100, 255, 218, 0.1);
+}
+
+/* Navbar style when scrolled */
+.navbarScroll {
+    padding: 10px 0;
+    background-color: rgba(10, 25, 47, 0.95);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Portfolio logo image */
+.portfolio-logo img {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    border: 2px solid #64ffda;
+    box-shadow: none;
+    transition: 0.3s ease-in-out;
+}
+
+/* Hover effect for logo */
+.portfolio-logo img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 10px rgba(100, 255, 218, 0.5);
+    border-color: #64ffda;
+}
+
+.p {
+    margin: 10px;
+    padding: 5px;
+    color: #64ffda;
+    border: 1.5px solid #64ffda;
+    border-radius: 15px;
+    align-items: center;
+    text-align: center;
+}
+
+.p:hover {
+    box-shadow: 0 0 20px rgba(100, 255, 218, 0.5);
+}
+
+.navbar-nav {
+    gap: 6px;
+}
+
+.nav-link {
+    color: #64ffda;
+    border: 1.5px solid #64ffda;
+    background-color: transparent;
+    font-weight: 500;
+    padding: 8px 16px;
+    position: relative;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    transform: scale(1);
+    background-color: transparent;
+    color: #72fedee7;
+    box-shadow: 0 0 20px rgba(100, 255, 218, 0.4);
+    border-color: rgba(100, 255, 218, 0.8);
+}
+
+
+.navbar-toggler {
+    color: transparent;
+    background-color: #64ffda;
+    box-shadow: 0 0 15px rgba(100, 255, 218, 0.4);
+    font-size: 1.5rem;
+    padding: 2px 4px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.navbar-toggler:hover {
+    box-shadow: 0 0 20px rgba(100, 255, 218, 0.6);
+    transform: scale(1.01);
+}
+
+
+/* ---------------------------------------------------------- Hero Section ------------------------------------------- */
+
+/* Hero Section */
+.bgimage {
+    height: 100vh;
+    background-size: 400% 400%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    animation: gradientBG 15s ease infinite;
+    overflow: hidden;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: #72fedee7;
+}
+
+.hero-text h3 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #64ffda;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #64ffda;
+    line-height: 1.5;
+
+}
+
+/* ------------------------------------------------------------- Social Links ----------------------------------------------------*/
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.social-icons a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #64ffda;
+    font-size: 1.5rem;
+}
+
+.social-icons a:hover {
+    color: #64ffda;
+    text-shadow: 0 0 40px rgba(100, 255, 218, 0.5);
+    transform: scale(1.1);
+}
+
+.social-icons i {
+    font-size: 2rem;
+}
+
+/* ------------------------------------------------------- About Section---------------------------------------------- */
+
+/* About Section */
+#about {
+    height: 600px;
+    background-color: #0a192f;
+    padding: 90px 20px;
+}
+
+#about h1 {
+    font-size: 2.35rem;
+    color: #64ffda;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Profile Image Styling */
+#about img {
+    width: 100%;
+    max-width: 400px;
+    max-height: 350px;
+    overflow: hidden;
+    border-radius: 5%;
+    margin: 10px auto 30px;
+    display: block;
+    box-shadow: 0 0 20px rgba(100, 255, 218, 0.4);
+}
+
+#about img:hover {
+    transform: scale(1);
+    box-shadow: 0 0 30px rgba(100, 255, 218, 0.4);
+}
+
+/* About Description */
+#about h3 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    line-height: 1.5;
+    padding: 35px 0 20px;
+    text-align: center;
+    color: #64ffda;
+    margin-bottom: 20px;
+}
+
+#about h2 p {
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 0.6;
+    text-align: center;
+    color: #64ffda;
+    padding: 0 20px;
+}
+
+/* ------------------------------------------------------- Services Section ------------------------------------------ */
+
+/*  Services Section  */
+#services {
+    background-color: #0a192f;
+    padding: 90px 0;
+    overflow: hidden;
+}
+
+#services h1 {
+    font-size: 2.5rem;
+    color: #64ffda;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/*  Card Styling */
+#services .card {
+    background: linear-gradient(135deg, #112240, #0f1e36);
+    border: 1.5px solid rgba(100, 255, 219, 0.308);
+    border-radius: 20px;
+    box-shadow: 0 10px 25px -10px rgba(2, 12, 27, 0.8);
+    transition: all 0.4s ease-in-out;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#services .card:hover {
+    transform: translateY(0px);
+    box-shadow: 0 0 20px rgba(100, 255, 218, 0.2);
+    border-color: rgba(100, 255, 218, 0.5);
+}
+
+/* Card Content */
+#services .card-body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+}
+
+.service-icon {
+    color: #64ffda;
+    font-size: 2.7rem;
+}
+
+#services .card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #64ffda;
+}
+
+#services .card-text {
+    font-size: 0.95rem;
+    color: #64ffda;
+    line-height: 1.5;
+}
+
+/* ------------------------------------------------------ Project Section -------------------------------------------- */
+
+/* Project Section */
+#Project {
+    background-color: #0a192f;
+    padding: 90px 0;
+}
+
+#Project h1 {
+    font-size: 2.5rem;
+    color: #64ffda;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Card Styling */
+#Project .card {
+    background: linear-gradient(135deg, #112240, #0f1e36);
+    border: 1.5px solid rgba(100, 255, 219, 0.308);
+    border-radius: 20px;
+    box-shadow: 0 10px 25px -10px rgba(2, 12, 27, 0.8);
+    transition: all 0.4s ease-in-out;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#Project .card:hover {
+    transform: translateY(0px);
+    box-shadow: 0 0 20px rgba(100, 255, 218, 0.2);
+    border-color: rgba(100, 255, 218, 0.5);
+}
+
+/* Card Content */
+#Project .card-body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#Project .card-body i {
+    font-size: 2.7rem;
+    color: #64ffda;
+}
+
+#Project .card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #64ffda;
+}
+
+#Project .card-text {
+    font-size: 0.95rem;
+    color: #64ffda;
+    line-height: 1.5;
+}
+
+/* Button Styling */
+#Project .btn-primary {
+    background-color: transparent;
+    color: #64ffda;
+    border: 1px solid #64ffda;
+    border-radius: 10px;
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+#Project .btn-primary:hover {
+    transform: translateY(0px);
+    box-shadow: 0 0 15px rgba(100, 255, 218, 0.3);
+    color: #64ffda;
+}
+
+/* Icon Styling Inside Button */
+#Project .btn-primary i {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+
+/* ------------------------------------------------------- Internship Section ---------------------------------------- */
+
+/* Internship Section */
+#internship {
+    background-color: #0a192f;
+    padding: 90px 0;
+}
+
+#internship h1 {
+    font-size: 2.5rem;
+    color: #64ffda;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Card Styling */
+#internship .card {
+    background: linear-gradient(135deg, #112240, #0f1e36);
+    border: 1.5px solid rgba(100, 255, 219, 0.308);
+    border-radius: 20px;
+    box-shadow: 0 10px 25px -10px rgba(2, 12, 27, 0.8);
+    transition: all 0.4s ease-in-out;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#internship .card:hover {
+    transform: translateY(0px);
+    box-shadow: 0 0 20px rgba(100, 255, 218, 0.2);
+    border-color: rgba(100, 255, 218, 0.5);
+}
+
+/* Card Content */
+#internship .card-body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#internship .card-body i {
+    font-size: 2.7rem;
+    color: #64ffda;
+}
+
+
+#internship .card-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #64ffda;
+}
+
+#internship .card-text {
+    font-size: 0.95rem;
+    color: #64ffda;
+    line-height: 1.6;
+}
+
+/* Button Styling */
+#internship .btn-primary {
+    background-color: transparent;
+    color: #64ffda;
+    border: 1px solid #64ffda;
+    border-radius: 10px;
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+#internship .btn-primary:hover {
+    transform: translateY(0px);
+    box-shadow: 0 0 15px rgba(100, 255, 218, 0.3);
+    color: #64ffda;
+}
+
+/* Icon Styling Inside Button */
+#internship .btn-primary i {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+
+/* ------------------------------------------------------- Certificate Section --------------------------------------- */
+
+/* Certificate Section */
+#certificates {
+    background-color: #0a192f;
+    padding: 40px 0;
+}
+
+#certificates h1 {
+    font-size: 2.5rem;
+    color: #64ffda;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Card Styling */
+#certificates .card {
+    background: linear-gradient(135deg, #112240, #0f1e36);
+    border: 1.5px solid rgba(100, 255, 219, 0.308);
+    border-radius: 20px;
+    box-shadow: 0 10px 25px -10px rgba(2, 12, 27, 0.8);
+    transition: all 0.4s ease-in-out;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#certificates .card:hover {
+    transform: translateY(0px);
+    box-shadow: 0 0 20px rgba(100, 255, 218, 0.2);
+    border-color: rgba(100, 255, 218, 0.5);
+}
+
+/* Card Content  */
+#certificates .card-body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#certificates .card-body i {
+    font-size: 2.7rem;
+    color: #64ffda;
+}
+
+#certificates .card-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #64ffda;
+}
+
+#certificates .card-text {
+    font-size: 0.95rem;
+    color: #64ffda;
+    line-height: 1.6;
+}
+
+/* Button Styling */
+#certificates .btn-primary {
+    background-color: transparent;
+    color: #64ffda;
+    border: 1px solid #64ffda;
+    border-radius: 10px;
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+#certificates .btn-primary:hover {
+    transform: translateY(0px);
+    box-shadow: 0 0 10px rgba(100, 255, 218, 0.3);
+}
+
+/* ---------------------------------------------------- Contact Section -------------------------------------------- */
+
+/* Contact Section */
+#contact {
+    height: 405px;
+    background-color: #0a192f;
+    color: #64ffda;
+    padding: 90px 20px;
+    text-align: center;
+}
+
+#contact .card {
+    background-color: #112240;
+    border: 1.5px solid rgba(100, 255, 218, 0.2);
+    border-radius: 12px;
+    padding: 40px;
+    max-width: 700px;
+    margin: auto;
+    box-shadow: 0 10px 25px rgba(2, 12, 27, 0.5);
+    transition: all 0.5s ease-in-out;
+}
+
+#contact .card:hover {
+    transform: scale(1);
+    box-shadow: 0 0 20px rgba(100, 255, 218, 0.3);
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #64ffda;
+}
+
+.contact-item {
+    font-size: 1.05rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: #64ffda;
+    flex-wrap: wrap;
+    word-break: break-word;
+    text-align: center;
+}
+
+.contact-item i {
+    font-size: 1.3rem;
+    color: #64ffda;
+}
+
+/* ----------------------------------------------------- Footer Section -------------------------------------------- */
+
+/* Footer Section */
+#footer {
+    height: 120px;
+    background-color: #0e1c35;
+    color: #a8b2d1;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.footer-text {
+    font-size: 0.9rem;
+    color: #64ffda;
+    font-weight: 600;
+}
+
+.footer-text a {
+    color: #64ffda;
+}
+
+.footer-text a:hover {
+    text-shadow: 0 0 40px #64ffda;
+}
+
+
+/* ************************************************** Responsive Design ********************************************** */
+
+/* Nev Bar menu & Hero Section Responsive Design */
+@media (max-width: 992px) {
+    .hero_title {
+        font-size: 3.5rem;
+    }
+
+    .about-container .row {
+        flex-direction: column;
+    }
+
+    .about-container .col-lg-4 {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .imageAdjust {
+        max-width: 70%;
+        margin: 0 auto;
+    }
+
+
+    /* Nev-Menu Responsive Design for Mobile */
+    .navbar-nav {
+        background: rgba(10, 25, 47, 0.98);
+        -webkit-backdrop-filter: blur(15px);
+        backdrop-filter: blur(15px);
+        padding: 20px;
+        border-radius: 8px;
+        margin-top: 15px;
+        box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.8);
+    }
+
+    .nav-link {
+        padding: 12px 20px !important;
+        margin: 4px 0;
+        text-align: center;
+    }
+
+    .nav-link::before {
+        display: none;
+    }
+
+    .nav-link:hover {
+        background: transparent;
+        transform: scale(1.01);
+    }
+
+    .nav-contact {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .bgimage {
+        height: 620px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .bgimage {
+        height: 500px;
+    }
+
+    .hero_title {
+        font-size: 2.5rem;
+    }
+
+    .imageAdjust {
+        max-width: 90%;
+    }
+
+    .hero-text h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-text h3 {
+        font-size: 1.5rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero_title {
+        font-size: 2rem;
+    }
+
+    .section-heading h1 {
+        font-size: 2rem;
+    }
+
+    .imageAdjust {
+        max-width: 100%;
+    }
+}
+
+
+
+/* About Us Section Responsive Design */
+@media (max-width: 992px) {
+    #about {
+        padding: 50px 50px;
+    }
+
+    #about h1 {
+        font-size: 1.5rem;
+    }
+
+    #about h3 {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    #about h2 p {
+        font-size: 0.8rem;
+        padding: 0 10px;
+    }
+
+    #about img {
+        margin-top: 40px;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    #about img {
+        max-width: 180px;
+        height: 180px;
+    }
+}
+
+
+@media (max-width: 576px) {
+    #about h1 {
+        font-size: 1rem;
+    }
+
+    #about h3,
+    #about h2 p {
+        font-size: 0.5rem;
+        padding: 0 5px;
+    }
+
+    #about img {
+        max-width: 180px;
+        height: 180px;
+    }
+}
+
+/* Services Section Responsive Design*/
+@media (max-width: 992px) {
+    #services h1 {
+        font-size: 2.2rem;
+    }
+
+    #services .card-body i {
+        font-size: 3.8rem;
+    }
+
+    #services .card-title {
+        font-size: 1.2rem;
+    }
+
+    #services .card-text {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #services {
+        padding: 60px 4vw;
+    }
+
+    #services h1 {
+        font-size: 2rem;
+    }
+
+    #services .card-body {
+        padding: 1.5rem;
+    }
+
+    #services .card-body i {
+        font-size: 3.2rem;
+        margin-bottom: 1rem;
+    }
+
+    #services .card-title {
+        font-size: 1.1rem;
+    }
+
+    #services .card-text {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    #services {
+        padding: 50px 3vw;
+    }
+
+    #services h1 {
+        font-size: 1.8rem;
+    }
+
+    #services .card {
+        margin-bottom: 30px;
+    }
+
+    #services .card-body {
+        padding: 1.2rem;
+    }
+
+    #services .card-title {
+        font-size: 1rem;
+    }
+
+    #services .card-text {
+        font-size: 0.88rem;
+    }
+}
+
+
+/* Project Section Responsive Design */
+@media (max-width: 992px) {
+    #Project .card-body {
+        padding: 1.5rem;
+    }
+
+    #Project .card-body i {
+        font-size: 3rem;
+    }
+
+    #Project .card-title {
+        font-size: 1.1rem;
+    }
+
+    #Project .card-text {
+        font-size: 0.9rem;
+    }
+
+    #Project .btn-primary i {
+        font-size: 16px;
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    #Project {
+        padding: 60px 3vw;
+    }
+
+    #Project h1 {
+        font-size: 2rem;
+    }
+
+    #Project .card-body i {
+        font-size: 2.8rem;
+    }
+
+    #Project .card-title {
+        font-size: 1rem;
+    }
+
+    #Project .card-text {
+        font-size: 0.85rem;
+    }
+
+    #Project .btn-primary {
+        font-size: 0.85rem;
+        padding: 0.35rem 0.9rem;
+    }
+
+    #Project .btn-primary i {
+        font-size: 15px;
+        margin-right: 4px;
+    }
+}
+
+@media (max-width: 576px) {
+    #Project {
+        padding: 50px 2vw;
+    }
+
+    #Project h1 {
+        font-size: 1.6rem;
+    }
+
+    #Project .card-body {
+        padding: 1.2rem;
+    }
+
+    #Project .card-body i {
+        font-size: 2.5rem;
+    }
+
+    #Project .card-title {
+        font-size: 0.95rem;
+    }
+
+    #Project .card-text {
+        font-size: 0.8rem;
+    }
+
+    #Project .btn-primary {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.8rem;
+        gap: 4px;
+    }
+
+    #Project .btn-primary i {
+        font-size: 14px;
+        margin-right: 3px;
+    }
+}
+
+
+/* Internship Section Responsive Design */
+@media (max-width: 768px) {
+    #internship {
+        padding: 60px 20px;
+    }
+
+    #internship .card-body i {
+        font-size: 3.5rem;
+    }
+
+    #internship .card-title {
+        font-size: 1.2rem;
+    }
+
+    #internship .card-text {
+        font-size: 0.9rem;
+    }
+
+    #internship .btn-primary {
+        font-size: 0.85rem;
+        padding: 0.5rem 1rem;
+    }
+
+    #internship .btn-primary i {
+        font-size: 15px;
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    #internship .card-body {
+        padding: 1.5rem;
+    }
+
+    #internship .card-body i {
+        font-size: 3rem;
+    }
+
+    #internship .card-text {
+        font-size: 0.85rem;
+    }
+
+    #internship h1 {
+        font-size: 2rem;
+    }
+
+    #internship .btn-primary {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.9rem;
+    }
+
+    #internship .btn-primary i {
+        font-size: 14px;
+        margin-right: 4px;
+    }
+}
+
+/* Certification Section Responsive Design */
+@media (max-width: 768px) {
+    #certificates {
+        padding: 60px 20px;
+    }
+
+    #certificates .card-img-top {
+        height: 200px;
+    }
+
+    #certificates .card-title {
+        font-size: 1.1rem;
+    }
+
+    #certificates .card-text {
+        font-size: 0.9rem;
+    }
+
+    #certificates .btn-primary {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+    }
+
+    #certificates .btn-primary i {
+        font-size: 15px;
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    #certificates h1 {
+        font-size: 2rem;
+    }
+
+    #certificates .card-img-top {
+        height: 180px;
+    }
+
+    #certificates .card-title {
+        font-size: 1rem;
+    }
+
+    #certificates .card-text {
+        font-size: 0.85rem;
+    }
+
+    #certificates .btn-primary {
+        padding: 0.4rem 0.9rem;
+        font-size: 0.8rem;
+    }
+
+    #certificates .btn-primary i {
+        font-size: 14px;
+        margin-right: 4px;
+    }
+}
+
+
+
+/* Contact & Footer Section Responsive Design */
+@media (max-width: 1024px) {
+    .social-icons {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    #contact h2 {
+        font-size: 1.5rem;
+    }
+
+    #contact {
+        padding: 110px 10px;
+    }
+
+    .contact-item {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .social-icons {
+        flex-direction: row;
+        gap: 12px;
+    }
+
+    .social-icons i {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .social-icons {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    #contact {
+        padding: 100px 10px;
+    }
+
+    #contact h2 {
+        font-size: 1rem;
+    }
+
+    #contact .card {
+        padding: 10px;
+    }
+
+    .contact-item {
+        font-size: 0.5rem;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .footer-text {
+        font-size: 0.6rem;
+    }
+}
