@@ -1,4 +1,5 @@
-  body {
+
+body {
       font-family: Arial, sans-serif;
       line-height: 1.6;
       margin: 0;
@@ -20,12 +21,14 @@
       border-bottom: #e8491d 3px solid;
   }
 
+
   header a {
       color: #ffffff;
       text-decoration: none;
       text-transform: uppercase;
       font-size: 16px;
   }
+
 
   header ul {
       padding: 0;
