@@ -1,4 +1,5 @@
- body {
+
+body {
      font-family: Arial, sans-serif;
      line-height: 1.6;
      margin: 0;
@@ -12,6 +13,7 @@
      overflow: hidden;
  }
 
+
  header {
      background: #35424a;
      color: #ffffff;
@@ -19,6 +21,7 @@
      min-height: 70px;
      border-bottom: #e8491d 3px solid;
  }
+
 
  header a {
      color: #ffffff;
